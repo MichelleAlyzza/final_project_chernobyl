@@ -1,0 +1,11 @@
+Model Information:
+* title:	чернобыль Chernobyl radiation
+* source:	https://sketchfab.com/3d-models/chernobyl-radiation-bfae0e7e6b614cb086fccfdefa4a5164
+* author:	victory_mirosya (https://sketchfab.com/victory_mirosya)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "чернобыль Chernobyl radiation" (https://sketchfab.com/3d-models/chernobyl-radiation-bfae0e7e6b614cb086fccfdefa4a5164) by victory_mirosya (https://sketchfab.com/victory_mirosya) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

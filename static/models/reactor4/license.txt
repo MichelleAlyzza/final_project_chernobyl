@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rbmk-1000 Reactor Core
+* source:	https://sketchfab.com/3d-models/rbmk-1000-reactor-core-9d0ac751c08b4037903d4f8db2f1dc1f
+* author:	rosser12345678910 (https://sketchfab.com/rosser12345678910)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rbmk-1000 Reactor Core" (https://sketchfab.com/3d-models/rbmk-1000-reactor-core-9d0ac751c08b4037903d4f8db2f1dc1f) by rosser12345678910 (https://sketchfab.com/rosser12345678910) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

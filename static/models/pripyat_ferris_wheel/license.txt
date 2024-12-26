@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pripyat ferris wheel
+* source:	https://sketchfab.com/3d-models/pripyat-ferris-wheel-8e2be4f8958246aea77c868b42bdde6b
+* author:	Ya (https://sketchfab.com/Yarik16)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pripyat ferris wheel" (https://sketchfab.com/3d-models/pripyat-ferris-wheel-8e2be4f8958246aea77c868b42bdde6b) by Ya (https://sketchfab.com/Yarik16) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

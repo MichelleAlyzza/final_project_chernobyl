@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chernobyl Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <h1 class="h1-landing">Welcome to the Chernobyl Experience</h1>
+        <p class="p-landing">Explore the history and impact of the Chernobyl disaster.</p>
+        <button id="explore-button">Explore</button>
+        <button id="watch-this-button">Watch This</button>
+        <p class="photo-credits-landing">Image credit: Igor Kostin/Laski Diffusion/Getty Images</p>
+    </div>
+
+    <!-- Explore Page -->
+    <div class="explore-page">
+        <section class="section">
+            <div class="text-container-main">
+                <h2 class="h2-explore-main">What Happened in Chernobyl?</h2>
+                <p class="p-explore-main">
+                    Understanding the events that transpired in Chernobyl.
+                </p>
+                <button id="read-this-button">Learn More</button>
+                <p class="scroll-down-sign">Scroll Down &#8595;</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="text-container">
+                <h2 class="h2-explore">How Did It Start?</h2>
+                <p class="p-explore">
+                    The Chernobyl disaster, which occurred on April 26, 1986, at the Chernobyl Nuclear Power Plant near Pripyat, 
+                    Ukraine, is regarded as the worst nuclear accident in history. <br><br>The plant had four reactors, and at the time 
+                    of the incident, Reactor No. 4 was undergoing a late-night safety test to assess how long turbines would spin 
+                    and supply power following a loss of external power. <br><br>Unfortunately, a series of operator errors and violations 
+                    of protocol led to an uncontrolled power surge. This surge caused a massive explosion that ruptured the reactor 
+                    core and released a significant amount of radioactive material into the atmosphere.
+                </p>
+                <button id="powerplant-button">Chernobyl Nuclear Powerplant</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="text-container">
+                <h2 class="h2-explore">What Led to the Explosion?</h2>
+                <p class="p-explore">
+                    The Chernobyl disaster was the result of a combination of design flaws in the RBMK reactor and critical human errors during a late-night safety test. 
+                    <br><br>The test aimed to determine how long the turbines could provide power during a loss of electricity. However, operators deviated from safety procedures, disabling critical safety systems and reducing the reactor’s power to an unstable level. 
+                    <br><br>A sudden power surge occurred, and the reactor’s flawed design caused the fuel rods to overheat and rupture. This triggered a steam explosion, which blew the reactor’s heavy steel and concrete lid off. A second explosion followed, igniting fires and releasing large amounts of radioactive material into the atmosphere.
+                    <br><br>The disaster highlighted the dangers of ignoring safety protocols and the risks of operating reactors with inherent design vulnerabilities.
+                </p>
+                <button id="reactor4-button">Reactor 4</button>
+            </div>   
+        </section>
+
+        <section class="section">
+            <div class="text-container">
+                <h2 class="h2-explore">The Ferris Wheel and Abandoned Life</h2>
+                <p class="p-explore">
+                    One of the most haunting symbols of the Chernobyl disaster is the Ferris wheel in Pripyat, which remains frozen in time. 
+                    <br><br>Originally intended to be a source of joy for families and children, it stands as a poignant reminder of the sudden halt of life in the city. 
+                    When the evacuation order was given, residents left behind their homes, their memories, and their dreams. 
+                    <br><br>Apartment blocks that once buzzed with laughter and life are now silent, with personal belongings still visible through the broken windows. 
+                    <br><br>These abandoned spaces tell the stories of families who were uprooted, leaving everything behind in the face of an invisible threat. 
+                    <br><br>The juxtaposition of the cheerful Ferris wheel against the backdrop of desolation encapsulates the stark contrast between life before and after the disaster.
+                </p>
+                <button id="ferris-wheel-button">Ferris Wheel</button>
+            </div>   
+        </section>
+
+        <section class="section">
+            <div class="text-container">
+                <h2 class="h2-explore">Aftermath and Impact</h2>
+                <p class="p-explore">
+                    The immediate aftermath of the explosion was chaotic. Firefighters and plant workers attempted to control the fire, 
+                    exposing themselves to lethal doses of radiation. In the days following, thousands of residents were evacuated from the surrounding areas, 
+                    with Pripyat being abandoned within 36 hours. 
+                    <br><br>
+                    The long-term health effects included increased rates of thyroid cancer among those exposed to radiation, as well as psychological impacts on the evacuees. 
+                    <br><br>
+                    The Chernobyl disaster prompted a reevaluation of nuclear safety protocols worldwide and highlighted the need for transparency and accountability in the nuclear industry.
+                </p>
+                <button id="aftermath-button">Aftermath</button>
+
+            </div>   
+        </section>
+        <section class="footer-section">
+            <footer>
+                <p>© 2024 Chernobyl Experience. All rights reserved. This project is for educational purposes only.</p>
+                <p>Image and content credits to their respective owners.</p>
+            </footer>
+        </section>
+        
+    </div>
+
+    <!-- Powerplant Page -->
+    <div class="powerplant-page" style="display: none;">
+        <div class="header-container">
+            <button id="powerplant-to-explore-button">Back</button>
+            <h1>Chernobyl Nuclear Powerplant</h1>
+        </div>
+    </div>
+
+    <!-- Reactor 4 Page -->
+    <div class="reactor4-page" style="display: none;">
+        <div class="header-container">
+            <button id="reactor-to-explore-button">Back</button>
+            <h1>Reactor 4 Explosion</h1>
+        </div>
+    </div>
+
+    <!-- Ferris Wheel Page -->
+    <div class="ferris-wheel-page" style="display: none;">
+        <div class="header-container">
+            <button id="ferriswheel-to-explore-button">Back</button>
+            <h1>Wheels of Memories</h1>
+        </div>
+    </div>
+
+    <!-- Aftermath Page -->
+    <div class="aftermath-page" style="display: none;">
+        <div class="header-container">
+            <button id="aftermath-to-explore-button">Back</button>
+            <h1>Aftermath</h1>
+        </div>
+    </div>
+
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>

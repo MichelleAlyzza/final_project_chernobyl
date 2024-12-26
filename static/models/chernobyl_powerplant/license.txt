@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chernobyl Nuclear Power Plant
+* source:	https://sketchfab.com/3d-models/chernobyl-nuclear-power-plant-3e08b24bd2d64f1098c3f2c0ecd7a001
+* author:	rosser12345678910 (https://sketchfab.com/rosser12345678910)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chernobyl Nuclear Power Plant" (https://sketchfab.com/3d-models/chernobyl-nuclear-power-plant-3e08b24bd2d64f1098c3f2c0ecd7a001) by rosser12345678910 (https://sketchfab.com/rosser12345678910) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
