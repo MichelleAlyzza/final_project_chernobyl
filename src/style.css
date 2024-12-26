@@ -6,7 +6,7 @@ body {
     overflow: auto; 
 }
 html {
-    background: #ededed;
+    background: #dfdddd;
     margin-left: 5px;
     margin: 0;
 }
@@ -200,6 +200,7 @@ button:hover {
     z-index: 1; 
 }
 
+
 /* Zigzag Layout */
 
 .section:nth-child(even) {
@@ -208,11 +209,11 @@ button:hover {
 
 /* Paragraph Styles for Odd and Even Sections */
 .section:nth-child(odd) .p-explore {
-    text-align: right; /* Align text to the right for odd sections */
+    text-align: right; 
 }
 
 .section:nth-child(even) .p-explore {
-    text-align: left; /* Align text to the left for even sections */
+    text-align: left; 
 }
 
 #reactor4-button {

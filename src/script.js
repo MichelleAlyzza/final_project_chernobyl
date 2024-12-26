@@ -3,6 +3,7 @@ import { startPowerplant } from './powerplant.js'
 import { startReactor } from './reactor4.js';
 import { startFerriswheel } from './ferriswheel.js';
 import { startAftermath } from './aftermath.js';
+import { destroyGUI } from './gui.js';
 
 /**
  * Pages
@@ -35,7 +36,7 @@ const aftermathToExploreButton = document.getElementById('aftermath-to-explore-b
  * Click Events
  */
 let canvas; // Declare the canvas variable outside the event listeners
-
+let gui;
 exploreButton.addEventListener('click', () => {
     // Hide landing page and show explore page
     landingPage.style.display = 'none';
@@ -56,7 +57,7 @@ exploreButton.addEventListener('click', () => {
 /**
  * Scene Buttons
  */
-powerplantButton.addEventListener('click', () => {
+powerplantButton.addEventListener('click', () => {        
     // Remove the existing exploration canvas, if any
     const existingExplorationCanvas = document.querySelector('.explore-page .webgl');
     if (existingExplorationCanvas) {
@@ -73,7 +74,7 @@ powerplantButton.addEventListener('click', () => {
     powerplantPage.appendChild(canvas);
 
     // Start the Reactor 4 scene with the new canvas
-    startPowerplant(canvas);
+    gui = startPowerplant(canvas);
 });
 
 
@@ -94,7 +95,7 @@ reactor4Button.addEventListener('click', () => {
     reactor4Page.appendChild(canvas);
 
     // Start the Reactor 4 scene with the new canvas
-    startReactor(canvas);
+    gui = startReactor(canvas);
 });
 
 ferrisWheelButton.addEventListener('click', () => {
@@ -114,7 +115,7 @@ ferrisWheelButton.addEventListener('click', () => {
     ferriswheelPage.appendChild(canvas);
 
     // Start the Reactor 4 scene with the new canvas
-    startFerriswheel(canvas);
+    gui = startFerriswheel(canvas);
 });
 aftermathButton.addEventListener('click', () => {
     // Remove the existing exploration canvas, if any
@@ -133,7 +134,7 @@ aftermathButton.addEventListener('click', () => {
     aftermathPage.appendChild(canvas);
 
     // Start the Reactor 4 scene with the new canvas
-    startAftermath(canvas);
+    gui = startAftermath(canvas);
 });
 
 
@@ -145,10 +146,12 @@ reactorToExploreButton.addEventListener('click', () => {
     // Hide Reactor 4 page and show the explore page
     reactor4Page.style.display = 'none';
     explorePage.style.display = 'block';
+    
+    // Destroy the GUI
+    gui = destroyGUI(gui);
 
-    // Remove the old canvas if it exists
     if (canvas) {
-        canvas.remove(); // This ensures you're not reusing the old canvas
+        canvas.remove();     // Remove the old canvas if it exists
     }
 
     // Create a new canvas
@@ -161,12 +164,14 @@ reactorToExploreButton.addEventListener('click', () => {
 });
 powerplantToExploreButton.addEventListener('click', () => {
 
-    powerplantPage.style.display = 'none';
-    explorePage.style.display = 'block';
+    gui = destroyGUI(gui);
 
     if (canvas) {
         canvas.remove(); 
     }
+
+    powerplantPage.style.display = 'none';
+    explorePage.style.display = 'block';
 
     canvas = document.createElement('canvas');
     canvas.classList.add('webgl');
@@ -177,12 +182,14 @@ powerplantToExploreButton.addEventListener('click', () => {
 });
 ferrisWheelToExploreButton.addEventListener('click', () => {
 
-    ferriswheelPage.style.display = 'none';
-    explorePage.style.display = 'block';
+    gui = destroyGUI(gui);
 
     if (canvas) {
         canvas.remove(); 
     }
+
+    ferriswheelPage.style.display = 'none';
+    explorePage.style.display = 'block';
 
     canvas = document.createElement('canvas');
     canvas.classList.add('webgl');
@@ -193,12 +200,14 @@ ferrisWheelToExploreButton.addEventListener('click', () => {
 });
 aftermathToExploreButton.addEventListener('click', () => {
 
-    aftermathPage.style.display = 'none';
-    explorePage.style.display = 'block';
+    gui = destroyGUI(gui);
 
     if (canvas) {
         canvas.remove(); 
     }
+
+    aftermathPage.style.display = 'none';
+    explorePage.style.display = 'block';
 
     canvas = document.createElement('canvas');
     canvas.classList.add('webgl');
@@ -207,12 +216,6 @@ aftermathToExploreButton.addEventListener('click', () => {
 
     startExploration(canvas);
 });
-
-
-
-
-
-
 
 
 
